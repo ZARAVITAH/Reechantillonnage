@@ -206,7 +206,7 @@ def main():
     st.markdown("""
 <div style="text-align: center; margin-bottom: 30px;">
     <h1>🔬 Analyseur de Ré-échantillonnage de Signaux Vibratoires</h1>
-    <p style="font-size: 18px;">Application scientifique pour l'analyse et le ré-échantillonnage de signaux vibratoires</p>
+    <p style="font-size: 18px;">Application web scientifique pour l'analyse et le ré-échantillonnage de signaux vibratoires</p>
 </div>
 
 <div style="background-color: #f0f2f6; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
