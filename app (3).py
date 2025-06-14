@@ -204,25 +204,45 @@ class VibrationResampler:
 def main():
     st.title("🔬 Analyseur de Ré-échantillonnage de Signaux Vibratoires")
     st.markdown("""
-    # **Application scientifique pour l'analyse et le ré-échantillonnage de signaux vibratoires**
-    L'objectif est de résoudre le ***problème d'insuffisance de données vibratoires enregistrées*** en appliquant des techniques de ré-échantillonnage scientifiquement validées pour augmenter la résolution temporelle des signaux.
-    ✨ **Fonctionnalités**
-       •📊 Génération de signaux synthétiques : Signaux vibratoires réalistes avec composantes fréquentielles industrielles
-       •📁 Import de données CSV : Support format personnalisé (séparateur ;, temps en ms)
-       •🔄 Ré-échantillonnage intelligent : 4 méthodes scientifiques avec paramètres ajustables
-       •📈 Visualisation comparative : Superposition des méthodes avec signal original
-       •📋 Métriques d'évaluation : MSE, MAE, RMSE, Corrélation, SNR
-       •🌊 Analyse spectrale : Comparaison FFT pour validation
-       •💾 Export des résultats : Téléchargement CSV des signaux traités
-       •💡 Recommandations automatiques : Sélection optimale basée sur les performances
+<div style="text-align: center; margin-bottom: 30px;">
+    <h1>🔬 Analyseur de Ré-échantillonnage de Signaux Vibratoires</h1>
+    <p style="font-size: 18px;">Application scientifique pour l'analyse et le ré-échantillonnage de signaux vibratoires</p>
+</div>
 
-    **Méthodes implémentées basées sur la littérature scientifique** :
-    - **Spline Cubique** : Unser (1999) - Optimal pour données modérées avec bruit faible
-    - **FFT Resampling** : Oppenheim & Schafer - Idéal pour signaux périodiques
-    - **SWT + Interpolation** : Mallat (2008) - Signaux transitoires/non-stationnaires  
-    - **Gaussian Process Regression** : Rasmussen & Williams (2006) - Modélisation fine avec peu de points
-    Ce projet a été réalisé par **A. Angelico** et **ZARAVITA** dans le cadre de l'analyse vibratoire.
-    """)
+<div style="background-color: #f0f2f6; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h3>📌 Objectif Principal</h3>
+    <p>Résoudre le <strong>problème d'insuffisance de données vibratoires enregistrées</strong> en appliquant des techniques de ré-échantillonnage scientifiquement validées pour augmenter la résolution temporelle des signaux.</p>
+</div>
+
+<div style="margin-bottom: 30px;">
+    <h2>✨ Fonctionnalités</h2>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="margin-bottom: 10px;">• 📊 <strong>Génération de signaux synthétiques</strong>: Signaux vibratoires réalistes avec composantes fréquentielles industrielles</li>
+        <li style="margin-bottom: 10px;">• 📁 <strong>Import de données CSV</strong>: Support format personnalisé (séparateur ;, temps en ms)</li>
+        <li style="margin-bottom: 10px;">• 🔄 <strong>Ré-échantillonnage intelligent</strong>: 4 méthodes scientifiques avec paramètres ajustables</li>
+        <li style="margin-bottom: 10px;">• 📈 <strong>Visualisation comparative</strong>: Superposition des méthodes avec signal original</li>
+        <li style="margin-bottom: 10px;">• 📋 <strong>Métriques d'évaluation</strong>: MSE, MAE, RMSE, Corrélation, SNR</li>
+        <li style="margin-bottom: 10px;">• 🌊 <strong>Analyse spectrale</strong>: Comparaison FFT pour validation</li>
+        <li style="margin-bottom: 10px;">• 💾 <strong>Export des résultats</strong>: Téléchargement CSV des signaux traités</li>
+        <li style="margin-bottom: 10px;">• 💡 <strong>Recommandations automatiques</strong>: Sélection optimale basée sur les performances</li>
+    </ul>
+</div>
+
+<div style="background-color: #e6f7ff; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h2>📚 Méthodes Scientifiques Implémentées</h2>
+    <ul>
+        <li style="margin-bottom: 12px;"><strong>Spline Cubique</strong>: Unser (1999) - Optimal pour données modérées avec bruit faible</li>
+        <li style="margin-bottom: 12px;"><strong>FFT Resampling</strong>: Oppenheim & Schafer - Idéal pour signaux périodiques</li>
+        <li style="margin-bottom: 12px;"><strong>SWT + Interpolation</strong>: Mallat (2008) - Signaux transitoires/non-stationnaires</li>
+        <li style="margin-bottom: 12px;"><strong>Gaussian Process Regression</strong>: Rasmussen & Williams (2006) - Modélisation fine avec peu de points</li>
+    </ul>
+</div>
+
+<div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+    <p>Ce projet a été réalisé par <strong>A. Angelico</strong> et <strong>ZARAVITA</strong> dans le cadre de l'analyse vibratoire avancée</p>
+    <p style="font-size: 14px; color: #666;">© 2024 - Tous droits réservés</p>
+</div>
+""", unsafe_allow_html=True)
     
     # Initialisation de l'analyseur
     resampler = VibrationResampler()
